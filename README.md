@@ -42,10 +42,16 @@ LuLu is supported by the "Friends of Objective-See" such as:
 
 \
 <a href="http://kandji.io/">
-  <img src="https://objective-see.com/images/friends/kandji.png" height="50px" />
+<!-- This should work, per https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to and I think it's an improvement but doesn't actually seem to be working right.  I don't get why there are 3 image URLs.  At least in preview, it seems to be using the 3rd URL.  I expected it to be using the first. -->
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://elvey.com/kandji.noalpha.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://objective-see.org/images/friends/textless/kandji.png">
+  <img alt="" src="https://elvey.com/kandji.noalpha.png" height="50px">
+</picture> 
 </a>
+
 \
-...next-generation Apple enterprise management.
+...next-generation Apple enterprise management. 
 
 \
 <a href="https://1password.com/?utm_medium=parnter&utm_source=Objective-See&utm_campaign=gp&utm_content=sponsorship">
